@@ -9,10 +9,9 @@ class TestClass {
         for (int i = 0; i < N; i++) {
              arr[i]=s.nextInt();
         }
-        int[] sortedArr=new int[arr.length];
-		countSort(arr,sortedArr);
+	countSort(arr);
     }
-    private static void countSort(int[] arr,int[] sortedArr) {
+    private static void countSort(int[] arr) {
 		int max=0;
 		for(int i=0;i<arr.length;i++){
 			max=Math.max(max, arr[i]);
@@ -29,6 +28,5 @@ class TestClass {
 			    System.out.println(i+" "+aux[i]);
 			}
 		}
-
 	}
 }
